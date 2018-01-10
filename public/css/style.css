@@ -1,0 +1,16 @@
+#footer {
+    margin-top: 30px;
+    padding: 10px;
+    color: #000000;
+    background: #2196F3;
+}
+
+#footer p{
+    margin-bottom: 0px;
+}
+.mar-top-30 {
+    margin-top: 30px;
+}
+.mar-bot-20 {
+    margin-bottom: 20px;
+}
