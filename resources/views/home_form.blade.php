@@ -9,12 +9,12 @@
                             <legend class="mar-bot-20">{{($form_type=='create')?'CREATE':'UPDATE'}}</legend>
                             <div class="form-group {{$errors->has('title')?'has-danger':''}}">
                                 <label for="title">Title</label>
-                                <input type="text" class="form-control {{$errors->has('title')?'is-invalid':''}} " name="title" id="title"  placeholder="Title" value="{{ ($articles->title)?$articles->title:'' }}">
+                                <input type="text" class="form-control {{$errors->has('title')?'is-invalid':''}} " name="title" id="title"  placeholder="Title" value="{{ isset($articles->title)?$articles->title:'' }}">
                                 <div class="invalid-feedback">{{$errors->has('title')?$errors->first('title'):''}}</div>
                             </div>
                             <div class="form-group {{$errors->has('description')?'has-danger':''}}">
                                 <label for="description">Description</label>
-                                <textarea  name="description" class="form-control {{$errors->has('title')?'is-invalid':''}} " id="description" placeholder="Description" cols="30" rows="5">{{ ($articles->description)?$articles->description:'' }}</textarea>
+                                <textarea  name="description" class="form-control {{$errors->has('title')?'is-invalid':''}} " id="description" placeholder="Description" cols="30" rows="5">{{ isset($articles->description)?$articles->description:'' }}</textarea>
                                 <div class="invalid-feedback">{{$errors->has('description')?$errors->first('description'):''}}</div>
                             </div>
                             <div class="form-group">
